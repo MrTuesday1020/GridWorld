@@ -1,7 +1,6 @@
 % gridworld.pl
 % Simulates a single agent in the Gridworld where truffles and restaurants appear on
 % each cycle at randomly determined locations in the 10x10 grid with probability 0.1
-
 % run a trial of 20 cycles of the BDI interpreter starting with the agent at (0,0)
 
 agent_trial :-
@@ -195,4 +194,3 @@ observe(pick(X,Y), picked(X,Y,S)) :-
 
 observe(sell(X,Y), sold(X,Y,S)) :-
         retract(sold(X,Y,S)).
-
